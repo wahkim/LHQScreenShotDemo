@@ -16,6 +16,8 @@
 		B5D1A7BC245D2A6C00CC6CF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A7BB245D2A6C00CC6CF0 /* main.m */; };
 		B5D1A7C6245D2A6C00CC6CF0 /* LHQScreenShotsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A7C5245D2A6C00CC6CF0 /* LHQScreenShotsDemoTests.m */; };
 		B5D1A7D1245D2A6C00CC6CF0 /* LHQScreenShotsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A7D0245D2A6C00CC6CF0 /* LHQScreenShotsDemoUITests.m */; };
+		B5D1A7E6245D858600CC6CF0 /* UITableView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A7E5245D858600CC6CF0 /* UITableView+Screenshot.m */; };
+		B5D1A7E9245D85B200CC6CF0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1A7E8245D85B200CC6CF0 /* UIImage+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		B5D1A7CC245D2A6C00CC6CF0 /* LHQScreenShotsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHQScreenShotsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D1A7D0245D2A6C00CC6CF0 /* LHQScreenShotsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQScreenShotsDemoUITests.m; sourceTree = "<group>"; };
 		B5D1A7D2245D2A6C00CC6CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D1A7E4245D858600CC6CF0 /* UITableView+Screenshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Screenshot.h"; sourceTree = "<group>"; };
+		B5D1A7E5245D858600CC6CF0 /* UITableView+Screenshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Screenshot.m"; sourceTree = "<group>"; };
+		B5D1A7E7245D85B200CC6CF0 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		B5D1A7E8245D85B200CC6CF0 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				B5D1A7AD245D2A6B00CC6CF0 /* SceneDelegate.m */,
 				B5D1A7AF245D2A6B00CC6CF0 /* ViewController.h */,
 				B5D1A7B0245D2A6B00CC6CF0 /* ViewController.m */,
+				B5D1A7E4245D858600CC6CF0 /* UITableView+Screenshot.h */,
+				B5D1A7E5245D858600CC6CF0 /* UITableView+Screenshot.m */,
+				B5D1A7E7245D85B200CC6CF0 /* UIImage+Extension.h */,
+				B5D1A7E8245D85B200CC6CF0 /* UIImage+Extension.m */,
 				B5D1A7B2245D2A6B00CC6CF0 /* Main.storyboard */,
 				B5D1A7B5245D2A6C00CC6CF0 /* Assets.xcassets */,
 				B5D1A7B7245D2A6C00CC6CF0 /* LaunchScreen.storyboard */,
@@ -267,10 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D1A7E6245D858600CC6CF0 /* UITableView+Screenshot.m in Sources */,
 				B5D1A7B1245D2A6B00CC6CF0 /* ViewController.m in Sources */,
 				B5D1A7AB245D2A6B00CC6CF0 /* AppDelegate.m in Sources */,
 				B5D1A7BC245D2A6C00CC6CF0 /* main.m in Sources */,
 				B5D1A7AE245D2A6B00CC6CF0 /* SceneDelegate.m in Sources */,
+				B5D1A7E9245D85B200CC6CF0 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
